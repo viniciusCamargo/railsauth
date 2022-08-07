@@ -1,0 +1,5 @@
+<h1>Welcome, <%= @user.name %></h1>
+
+<pre><%= JSON.pretty_generate(@user) %></pre>
+
+<%= button_to 'Logout', 'auth/logout', method: :get %>

@@ -90,6 +90,9 @@ GEM
       reline (>= 0.3.1)
     digest (3.1.0)
     dotenv (2.8.1)
+    dotenv-rails (2.8.1)
+      dotenv (= 2.8.1)
+      railties (>= 3.2)
     erubi (1.11.0)
     faraday (2.4.0)
       faraday-net_http (~> 2.0)
@@ -220,6 +223,10 @@ GEM
       unicode-display_width (>= 1.4.0, < 3.0)
     rubocop-ast (1.20.1)
       parser (>= 3.1.1.0)
+    rubocop-rails (2.15.2)
+      activesupport (>= 4.2.0)
+      rack (>= 1.1)
+      rubocop (>= 1.7.0, < 2.0)
     ruby-progressbar (1.11.0)
     ruby2_keywords (0.0.5)
     rubyzip (2.3.2)
@@ -276,7 +283,7 @@ DEPENDENCIES
   bootsnap
   capybara
   debug
-  dotenv
+  dotenv-rails
   importmap-rails
   jbuilder
   omniauth-auth0
@@ -285,6 +292,7 @@ DEPENDENCIES
   rack-mini-profiler
   rails (~> 7.0.3, >= 7.0.3.1)
   rubocop
+  rubocop-rails
   selenium-webdriver
   spring
   sprockets-rails
